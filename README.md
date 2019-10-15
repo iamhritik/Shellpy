@@ -1,7 +1,7 @@
 # Shellpy
 Shellpy is a reverse shell command line program for sharing your terminal with others.
 
-#Installation
+# Installation
 Firstly Install all the required packages for this porgram through pip command.
 pip command pkg_name
 1.socket 
@@ -10,7 +10,7 @@ pip command pkg_name
 4.OS
 
 
-#How it Works ?
+# How it Works ?
 To use this reverse shell, two scripts need to be running
 
     Client.py - runs on a public server and add your host system IP  Address and then wait for connection.
