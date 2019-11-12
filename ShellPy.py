@@ -23,8 +23,6 @@ def options(a):
 	elif a=='2':
 		print("SHELLPY ( ABOUT US ) \n\n")
 		print("ShellPy is a standalone program capable of sharing your terminal and all it’s features with other desktop. In addition to this terminal service sharing, the application is completely transparent to user.\n\nA reverse shell works by the remote computer sending its shell to a specific user.This allows root commands over the remote server.\n\nTo use this reverse shell, two scripts need to be running:\n\t[*]Server.py - runs on a public server and waits for clients to connect.\n\t[*]Client.py - connects to a remote server and then wait for commands ")
-		print("\nMade by Hritik")
-		print("\tLink - https://github.com/iambotface/ShellPy")
 		input()
 	elif a=='3':
 		exit()
@@ -85,18 +83,6 @@ def send_commands(conn):
             client_response = str(conn.recv(1024), "utf-8")
             print(client_response, end="")
 
-
-def about():
-	print("SHELLPY ( ABOUT US ) \n\n")
-
-	print("ShellPy is a standalone program capable of sharing your terminal and all it’s features with other desktop. In addition to this terminal service sharing, the application is completely transparent to user.\n\nA reverse shell works by the remote computer sending its shell to a specific user.This allows root commands over the remote server.\n\nTo use this reverse shell, two scripts need to be running:\n\t[*]Server.py - runs on a public server and waits for clients to connect.\n\t[*]Client.py - connects to a remote server and then wait for commands ")
-	print("\nMade by Hritik")
-	print("\tLink - https://github.com/iambotface/ShellPy")
-
-def quit():
-	print(" ")
-	print("Quiting ShellPy...")
-	sys.exit()
 
 	
 main()
